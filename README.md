@@ -1,15 +1,14 @@
 # pcr_maofen
 
 一个公主连结插件，适用于hoshinobot，旨在通过设置不同阶段不同boss的权重，反应出刀人的实际贡（毛）献（分）
-使用说明
 
 ### 安装说明
-***
 * 1.在`hoshino/modules`目录克隆本仓库
 * 2.复制一份config.json.example，命名为config.json
 * 3.编辑config.json文件，其中yobot_url为yobot的api地址，可以从yobot网页端的统计页面得到，其余是不同阶段的权重数据，以数组形式存储，一个数组从左至右依次是一到五王
 * 4.安装依赖requests库（hoshino部署的时候就装了，跳过）
-* 5.编辑hoshino的配置文件启用模块`pcr_maofen`
+* 5.编辑hoshino的配置文件启用模块pcr_maofen
+
 
 ### 命令说明
 |  指令   | 说明  |
