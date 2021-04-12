@@ -68,10 +68,10 @@ def caculate_maofen():
     return msg
 
 
-@sv.on_fullmatch('毛分', 'maofen', '/maofen')
+@sv.on_fullmatch(('毛分', 'maofen', '/maofen'))
 async def maofen(bot, ev):
     res = caculate_maofen()
-    await bot.send(res)
+    await bot.send(ev, res)
 
 
 @sv.on_prefix('调整权重')
