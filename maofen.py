@@ -7,8 +7,10 @@ from hoshino import Service, priv
 from hoshino.modules.pcr_maofen.config import Config
 
 _help = '''
-[maofen,/maofen或者毛分]查询毛分'''.strip()
-sv = Service('毛分', help_=_help, bundle='公会战')
+[maofen,/maofen或者毛分]查询毛分
+[设置毛分]修改权重数据（管理员可用）
+[查看权重]查询权重数据'''.strip()
+sv = Service('毛分', help_=_help, bundle='帮助')
 
 CONFIG_PATH = './hoshino/modules/pcr_maofen/config.json'
 STAGE_LIST = ['A', 'B', 'C', 'a', 'b', 'c']
