@@ -44,7 +44,7 @@ class Config:
         self._load_config()
         data = self.config
         key = "stage{}".format(stage.upper())
-        data.update(key=coefficient_list)
+        data.update({key: coefficient_list})
 
         # 写入配置
         self._save_config(data)
